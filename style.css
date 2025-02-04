@@ -1,0 +1,163 @@
+:root {
+  /* Primary colors */
+
+  --clr-primary-magenta: hsl(300, 43%, 22%);
+  --clr-primary-pink: hsl(333, 80%, 67%);
+
+  /* Neutral Colors */
+
+  --clr-neutral-dmagenta: hsl(303, 10%, 53%);
+  --clr-neutral-lmagenta: hsl(300, 24%, 96%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+
+  /* Fonts */
+
+  --fs-primary: 15px;
+  --ff-primary: "League Spartan", serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-primary);
+}
+
+.main-container-grid {
+  width: 1150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  margin-right: 10px;
+  color: var(--clr-primary-magenta);
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.header p {
+  color: var(--clr-neutral-dmagenta);
+  width: 450px;
+  font-size: 1.1rem;
+  font-weight: var(--fw-medium);
+  line-height: 1.4;
+}
+
+.reviews-content-grid {
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  align-items: center;
+}
+
+.reviews-section:nth-child(1) {
+  align-self: end;
+}
+
+.reviews-section:nth-child(2) {
+  justify-self: center;
+}
+
+.reviews-section:nth-child(3) {
+  justify-self: end;
+  align-self : start;
+}
+
+.reviews-section {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  background-color: var(--clr-neutral-lmagenta);
+  padding:15px 10px 15px 30px;
+  border-radius: 10px;
+}
+
+.list {
+  display: flex;
+  gap: 5px;
+}
+
+.reviews-section p {
+  margin-left: 15px;
+  color: var(--clr-primary-magenta);
+  font-weight: var(--fw-bold);
+}
+
+.footer-grid {
+  grid-column : 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  justify-items: center;
+  column-gap: 30px;
+  color: var(--clr-neutral-white);
+}
+
+
+.feedback > img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+
+.name {
+  font-weight: var(--fw-medium);
+  margin-bottom: 5px;
+}
+
+.verified {
+  color: var(--clr-primary-pink);
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  margin-top: 20px;
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
+
+.card {
+  padding: 30px;
+  background-color: var(--clr-primary-magenta);
+  border-radius: 10px;
+}
+
+.footer-grid .grid-1 {
+  align-self: start;
+}
+.footer-grid .grid-2 {
+  align-self: center;
+}
+.footer-grid .grid-3 {
+  align-self: end;
+}
+
+
+
+
+
+
+
+
+
